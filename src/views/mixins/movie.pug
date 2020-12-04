@@ -1,0 +1,6 @@
+mixin movieMixin(video = {})
+  div
+    a(href=routes.detail(video.id))
+      h3=video.title
+        //- h3=video.year
+        //- h3=video.views

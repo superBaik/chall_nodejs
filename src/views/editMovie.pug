@@ -1,0 +1,22 @@
+//- extends layouts/main
+
+block content
+    .form-container
+        form(action=routes.editMovie(movie.id), method="post")
+            input(type="text", placeholder="Title", name="title", value=movie.title)
+            input(type="number" name="year" placeholder="Year" , value=movie.year)
+            input(type="rating", placeholder="Rating", name="rating", value=movie.rating)
+            textarea(name="sysnopsis", placeholder="Synopsis")=movie.synopsis
+            input(type="text", name="genres", placeholder="genres", value=movie.genres)
+            input(type="submit", value="Update Video")
+            a.form-container__link(href=routes.deleteMovie(movie.id)) Delete Video 
+
+
+            
+            //- input(type="text", name="description", placeholder="synopsis", required=true)
+            
+          
+
+
+
+    h1= "You can Edit Here "

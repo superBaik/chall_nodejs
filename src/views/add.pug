@@ -1,0 +1,12 @@
+block content 
+
+block content
+    .form__container
+        form(action=routes.add, method="post")
+            input(type="input", name="title", placeholder="title", required=true)
+            input(type="number" name="year" placeholder="Year" , required=true)
+            input(type="text" name="rating" placeholder="Rating" , required=true)
+            input(type="text", name="synopsis", placeholder="synopsis", required=true)
+            input(type="text", name="genres", placeholder="genres", required=true)
+            input(type="submit",value="Submit")
+        
